@@ -33,12 +33,16 @@ html, body{
     font-weight: 400;
     font-size: 16px;
     cursor: default;
+    background-color: var(--primaryColor);
 }
 img{
     width: 100%;
     height: 100%;
 }
-
+.hr{
+    color: var(--TextColor);
+    height: 5px;
+}
 
 /* Reset code end */
 
@@ -46,6 +50,9 @@ header{
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.858)), url('images/header-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 header nav{
     width: 80%;
@@ -101,26 +108,25 @@ nav .nav-signin-btn a{
     color: var(--TextColor);
     margin: 01em 0;
 }
-.header-container span{
+.header-container form{
     max-width: 90%;
+    height: auto;
     margin: 0 auto ;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-container span input{
-    width: 69%;
+.header-container form input{
+    flex-basis: 69%;
     max-height: 100%;
     padding: 20px ;
-    border: 1px solid var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
     background: transparent;
+    color: var(--TextColor);
+    font-size: 1.5em;  
 }
-.header-container span input::placeholder{
-    font-size: 1.5em;
-}
-
-.header-container span button{
-    width: 29%;
+.header-container form button{
+    flex-basis: 29%;
     max-height: 100%;
     padding: 20px ;
     border: 1px solid var(--secondaryColor);
@@ -132,10 +138,37 @@ nav .nav-signin-btn a{
     transition: var(--transition);
     cursor: pointer;
 }
-.header-container span button:hover{
+.header-container form button:hover{
     background-color: var(--btnHoverColor);
 }
-
 /* hero area code end */
 
-helloe
+/* ------first section -------features------ */
+.features{
+    width: 100%;
+    padding: 3rem auto;
+}
+.features .row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+.row .text-col{
+    width: 50%;
+    color: var(--TextColor);
+}
+.row .text-col h2{
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.row .text-col p{
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+.row .img-col{
+    width: 50%;
+}
