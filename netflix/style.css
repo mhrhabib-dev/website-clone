@@ -9,7 +9,7 @@
     text-decoration: none;
     outline: none;
     border: none;
-
+    list-style: none;
 }
 :root{
     --primaryColor: #000000;
@@ -171,4 +171,34 @@ nav .nav-signin-btn a{
 }
 .row .img-col{
     width: 50%;
+}
+
+
+/* ---------first---article------- */
+.freequently{
+    width: 80%;
+    margin: 3rem auto;
+
+    color: white;
+}
+.freequently h2{
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.freequently .faq li{
+    background-color: var(--secondaryColor);
+    margin: 1rem 0;
+}
+.freequently .faq li input{
+    display: ;
+}
+.freequently .faq li label{
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 4em 1em;
+    text-transform: capitalize;
+}
+.faq-container{
+    display: nne;
 }
