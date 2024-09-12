@@ -175,30 +175,56 @@ nav .nav-signin-btn a{
 
 
 /* ---------first---article------- */
-.freequently{
+.frequ{
+    width: 100%;
+    color: white;
+    
+}
+.frequently{
     width: 80%;
     margin: 3rem auto;
-
-    color: white;
 }
-.freequently h2{
+.frequently h2{
     font-size: 2em;
-    font-weight: 800;
     text-transform: capitalize;
-}
-.freequently .faq li{
-    background-color: var(--secondaryColor);
     margin: 1rem 0;
 }
-.freequently .faq li input{
-    display: ;
+.frequently .faq{
+    margin: 1rem 0;
+    width: 100%;
 }
-.freequently .faq li label{
+.faq li{
+    padding: .5em 0;
+}
+.faq li input{
+    display: none;
+}
+.faq li input:checked + label + .faq-container{
+    max-height: 900px;
+    padding: 2em 1em;
+}
+.faq li label{
+    display: flex;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    margin-bottom: .5em;
+    padding: 0.5em;
     font-size: 1.5em;
-    font-weight: 400;
-    padding: 4em 1em;
-    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.faq li label::after{
+    content: '+';
+    position: absolute;
+    font-size: 2em;
+    font-size: 1.3em;
+    font-weight: 300;
+    right: .8em;
 }
 .faq-container{
-    display: nne;
+    background: var(--secondaryColor);
+    padding: 0 1em;
+    max-height: 0;
+    overflow: hidden;
 }
