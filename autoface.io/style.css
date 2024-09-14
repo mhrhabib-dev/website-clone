@@ -1,0 +1,443 @@
+/* reset code start  */
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+:root{
+    --primaryColor: #fefeff;
+    --secondaryColor:#f6f7ff;
+    --Text-primaryColor: #0866FF;
+    --Text-primaryColor2: #E4EDFF;
+    --Text-secondaryColor: #212529;
+    --Text-thirdColor: #949393;
+    --Text-thirdColor: hiw-details
+    --sectionColor: #F0F3FF;
+    --border: 1px solid black;
+    --transition: all 0.3s ease;
+ 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Cabin Condensed", sans-serif;
+    cursor: default;
+    background: var(--primaryColor);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-btn{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--Text-primaryColor);
+    background: var(--Text-primaryColor2);
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: 2em;
+    letter-spacing: .09em;
+}
+
+/* reset code end */
+nav{
+    width: 100%;
+    height: 18vh;
+}
+.navigation-container{
+    width: 85%;
+    height: 23vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo-menu{
+    width: 50%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.logo-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 3em;
+}
+.logo a{
+    display: inline-block;
+    margin-left: .5em;
+    font-size: 2.3em;
+    font-weight: 700;
+    color: var(--Text-secondaryColor)
+}
+.logo-menu .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+}
+.menu li{
+    margin: 1.2em;
+}
+.menu li a{
+    color: var(--Text-thirdColor);
+    font-size: 1.6em;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.menu li a:hover{
+    color: var(--Text-primaryColor)
+}
+.navigation-container .lan-down{
+    display: flex;
+    align-items: center;
+}
+.lan-down .langu{
+    display: flex;
+    align-items: center;
+}
+.langu img{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: .5em;
+}
+.langu p{
+    font-size: 1.4em;
+    color: var(--Text-thirdColor);
+}
+
+.lan-down .nav-down-btn a{
+    display: inline-block;
+    color: var(--Text-primaryColor);
+    background-color: #F0F0F0;
+    border: 1px solid var(--Text-primaryColor);
+    margin-left: 2em;
+    padding: .5em 1.5em;
+    border-radius: 3em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.lan-down .nav-down-btn a i{
+    font-size: .7em;
+    margin-left: 0.5em;
+}
+/* hero area code  */
+
+.header-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+.header-container .header-img{
+    width: 48%;
+}
+.header-container .header-txt{
+    width: 48%;
+}
+.header-txt h1{
+    font-size: 5em;
+    font-weight: 900;
+    margin: .5em 0;
+    color: var(--Text-secondaryColor);
+}
+.header-txt h1 span{
+    color: var(--Text-primaryColor);
+}
+
+.header-txt p, .para{
+    color: var(--Text-thirdColor);
+    font-size: 1.5em;
+
+}
+.header-txt a{
+    display: inline-block;
+    color: var(--primaryColor);
+    background: var(--Text-primaryColor);
+    padding: .5em 1em;
+    border-radius: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 3em;
+}
+/* ----------first section -------hidemyacc--------  */
+.first-section{
+    width: 100%;
+    background: linear-gradient(#f6f7ff,#fefeff);
+}
+.hidemyacc-container{
+    display: flex;
+    justify-content: space-between;
+}
+.hidemyacc-txt{
+    width: 60%;
+    padding: 4rem 8%; 
+}
+.hidemyacc-txt h2{
+    font-size: 4em;
+    margin: .5em 0;
+    color: var(--Text-secondaryColor)
+}
+.hidemyacc-txt h3{
+    text-transform: capitalize;
+}
+.hidemyacc-txt a{
+        display: inline-block;
+        color: var(--Text-primaryColor);
+        background: var(--primaryColor);
+        padding: .5em 1em;
+        border-radius: 2em;
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-top: 3em;
+        border: 1px solid var(--Text-primaryColor);
+}
+.hidemyacc-container .hidemyacc-img{
+    width: 40%;
+}
+/* ----------message section-------------- */
+.message{
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    background-color: var(--Text-primaryColor);
+    padding: .5em;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer7;
+}
+
+/* ------second-section-----about container----------  */
+
+.about-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.about-container .about-title{
+    text-align: center;
+}
+.about-title h2{
+    font-size: 5em;
+    font-weight: 900;
+}
+.about-title span{
+    color: var(--Text-primaryColor);
+}
+.about-item-container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin: 10rem 0;
+}
+.about-img{
+    width: 70%;
+   
+}
+.about-item{
+    position: absolute;
+
+}
+.about-first-item{
+    position: absolute;
+    top:0%;
+    left: 9%;
+}
+.about-second-item{
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+.about-third-item{
+    position: absolute;
+    left: 4%;
+    bottom: 1%;
+}
+.about-fourth-item{
+    position: absolute;
+   bottom: -6%;
+   right: 9%;
+}
+.about-item{
+    width: 40%;
+    background: var(--primaryColor);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+    padding: 1.8em;
+    border-radius: 2em;
+
+}
+.about-item h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin: .7em 0;
+}
+.about-item p{
+    font-size: 1.5em;
+    color: var(--Text-thirdColor);
+    letter-spacing: .1em;
+    margin: 1em 0;
+ }
+ .about-item a{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--Text-primaryColor);
+    background: var(--Text-primaryColor2);
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: 2em;
+    letter-spacing: .09em;
+}
+
+/* -------third section-------how it work-------------- */
+.third-section{
+    background-color: var(--secondaryColor);
+}
+.howitwork-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+.howitwork-container .lehiw-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lehiw-title img{
+    width: 100px;
+}
+.lehiw-title H2{
+    font-size: 5em;
+    padding: 1.5rem;
+}
+.howitwork-container .hiw-img{
+    margin: 3rem 0;
+}
+.hiw-details{
+    width: 50%;
+    margin: 0 auto;
+
+}
+.hiw-details h2{
+    color: var(--Text-primaryColor);
+    font-size: 4em;
+    font-weight: 800;
+}
+.hiw-details p{
+    font-size: 1.5em;
+    margin: 1em 0;
+    color: #949393;
+}
+/* ------- Fourth section---------free trial--------- */
+
+.fourth-section{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--Text-primaryColor);
+    display: grid;
+    place-content: center;    
+}
+.freetrial{
+    color: white;
+    text-align: center;
+}
+.freetrial h2{
+    font-size: 5em;
+    font-weight: 900;
+}
+.freetrial a{
+    display: inline-block;
+    color: var(--Text-primaryColor);
+    background: var(--primaryColor);
+    margin: 1em 0;
+    padding: .5em 1.5em;
+    border-radius: 2em;
+    font-size: 1.5em;
+    border: 3px solid var(--Text-primaryColor);
+    box-shadow: 2px .5px 0 white, 2px -.5px 0 white;
+}
+.freetrial i{
+    margin-left: .5em;
+}
+/* --------footer------------------- */
+footer{
+    width: 100%;
+}
+.footer-container{
+    width: 80%;
+    height: 20vh;
+    margin: 0 auto;
+}
+.footer-logo-m{
+    width: 13%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+.footer-logo-m img{
+    width: 25%
+}
+.footer-logo-m a{
+    display: inline-block;
+    font-size: 2em;
+    margin-left: .5em;
+    color: var(--Text-secondaryColor);
+}
+.footer-social-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+.footer-social-link p{
+    color: var(--Text-primaryColor);
+    font-size: 1.5em;
+}
+.footer-social-link ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-link ul li{
+    margin: 0 1em;
+}
+.footer-social-link ul li a{
+    color: var(--Text-primaryColor);
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social i{
+    color: var(--Text-primaryColor);
+    font-size: 2.5em;
+    margin: .2em;
+    cursor: pointer;
+}
